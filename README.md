@@ -1,7 +1,7 @@
-## Nestjs Request Lifecycle
+## Nestjs Request/Response Lifecycle
 
 <p align="center">
-  <a href="" target="blank"><img src="images/NestjsRequestLifeCycle.png" width="1400" alt="kreMES Logo" /></a>
+  <a href="https://raw.githubusercontent.com/zulfikar4568/about-nestjs/master/images/NestjsLifecycle.svg" target="blank"><img src="images/NestjsLifecycle.svg" alt="Diagram" /></a>
 </p>
 
 1. Request: Client Membuat Request
