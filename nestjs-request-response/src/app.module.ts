@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { AuthGuard } from './guards/auth.guard';
 import { LoggingInterceptor } from './interceptors/logging.interceptor';
 import { AuthenticationMiddleware } from './middleware/authentication.middleware';
+import { FreezePipe } from './pipes/freeze.pipe';
 import { RequestService } from './request.service';
 
 @Module({
@@ -20,7 +21,11 @@ import { RequestService } from './request.service';
       provide: APP_INTERCEPTOR, //Interceptor untuk level provider, jika di taruh di app.module akan menjadi global
       scope: Scope.REQUEST,
       useClass: LoggingInterceptor
-    }
+    },
+    // {
+    //   provide: APP_INTERCEPTOR, //Pipe untuk level provider, jika di taruh di app.module akan menjadi global
+    //   useClass: FreezePipe
+    // }
   ],
 })
 export class AppModule implements NestModule {
