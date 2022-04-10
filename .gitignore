@@ -1,0 +1,36 @@
+# compiled output
+nestjs-request-response/dist
+nestjs-request-response/node_modules
+
+# Logs
+logs
+*.log
+nestjs-request-response/npm-debug.log*
+nestjs-request-response/pnpm-debug.log*
+nestjs-request-response/yarn-debug.log*
+nestjs-request-response/yarn-error.log*
+nestjs-request-response/lerna-debug.log*
+
+# OS
+nestjs-request-response/.DS_Store
+.DS_Store
+
+# Tests
+nestjs-request-response/coverage
+nestjs-request-response/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
