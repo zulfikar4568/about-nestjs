@@ -13,7 +13,7 @@ async function bootstrap() {
 
   //Gunakan ini untuk di aplikasikan secara global, jika ada Dependency Injection seperti middleware ini tidak akan bekerja secara baik, jika ada DI gunakan di provider app.module saja agar menjadi global
   // app.useGlobalInterceptors(new LoggingInterceptor());
-  
+
   //Gunakan ini untuk di aplikasikan secara global, jika ada Dependency Injection seperti middleware ini tidak akan bekerja secara baik, jika ada DI gunakan di provider app.module saja agar menjadi global
   // app.useGlobalPipes(new FreezePipe());
 

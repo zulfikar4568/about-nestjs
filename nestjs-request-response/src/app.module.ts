@@ -13,15 +13,16 @@ import { RequestService } from './request.service';
   imports: [],
   controllers: [AppController],
   providers: [
-    AppService, 
-    RequestService, {
+    AppService,
+    RequestService,
+    {
       provide: APP_GUARD, //Guard untuk level provider, jika di taruh di app.module akan menjadi global
-      useClass: AuthGuard
+      useClass: AuthGuard,
     },
     {
       provide: APP_INTERCEPTOR, //Interceptor untuk level provider, jika di taruh di app.module akan menjadi global
       scope: Scope.REQUEST,
-      useClass: LoggingInterceptor
+      useClass: LoggingInterceptor,
     },
     // {
     //   provide: APP_INTERCEPTOR, //Pipe untuk level provider, jika di taruh di app.module akan menjadi global
@@ -29,8 +30,8 @@ import { RequestService } from './request.service';
     // },
     {
       provide: APP_FILTER,
-      useClass: HttpExceptionFilter
-    }
+      useClass: HttpExceptionFilter,
+    },
   ],
 })
 export class AppModule implements NestModule {
